@@ -52,7 +52,12 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main style="margin-top: 15px;">
+      <% if flash[:notice] %>
+        <p id="notice">
+          <%= flash[:notice] %>
+        </p>
+      <% end %>
       <%= yield %>
     </main>
     <footer>

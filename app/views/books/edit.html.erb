@@ -1,5 +1,6 @@
 <div class="containar">
   <div class="row">
+    <%= render "devise/shared/error_messages", resource: @book %>
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
       <h1>Editing Book</h1>
         <%= form_with model: @book, url: book_path, local: true do |f| %>

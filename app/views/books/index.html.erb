@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-      <%= render 'shared/user_side_bar', user: current_user %>
+      <%= render 'shared/user_side_bar', user: current_user, book: @book %>
     </div>
     <div class="col-md-8 offset-md-1">
       <h2>Books</h2>
@@ -15,7 +15,7 @@
           </tr>
         </thead>
         <tbody>
-          <%= render 'shared/new_book_form', books: @books %>
+          <%= render 'shared/books_list', books: @books %>
         </tbody>
       </table>
     </div>
